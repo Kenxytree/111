@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Cabecera TechWorld</title>
+
+    <style> <!-- Sección de CSS interno para aplicar estilos a los elementos HTML. -->
+
+        
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #ffffff;
+            color: #333; 
+        }
+
+        
+        header {
+            background-color: #000; 
+            color: white; 
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px 20px; /* Espaciado interno: 10px arriba/abajo, 20px a los lados. */
+            border-bottom: 2px solid #444; /* Línea inferior gris oscuro para separar visualmente. */
+        }
+
+        
+        .logo {
+            display: flex; 
+            align-items: center; 
+            background-color: white; 
+            border: 2px solid white; 
+            border-radius: 5px; 
+            padding: 5px; 
+        }
+
+        
+        .worktech-logo {
+            width: 100px; /* Ancho fijo del logo. */
+            height: auto; /* Mantiene la proporción original de la imagen. */
+        }
+
+        /* Contenedor de la barra de búsqueda */
+        .search-container {
+            flex-grow: 1; /* Ocupa el espacio sobrante entre logo y navegación. */
+            margin: 0 20px; /* Margen a los lados para separarlo visualmente. */
+        }
+
+        /* Estilo del campo de búsqueda */
+        input[type="text"] {
+            width: 100%; /* Ocupa todo el ancho disponible del contenedor. */
+            padding: 8px; /* Espacio interno para comodidad del usuario al escribir. */
+            border: 1px solid #ccc; /* Borde gris claro. */
+            border-radius: 4px; /* Esquinas redondeadas para diseño moderno. */
+        }
+
+        /* Estilo del menú de navegación */
+        nav {
+            display: flex; /* Flexbox para organizar los enlaces horizontalmente. */
+            align-items: center; /* Alinea verticalmente los elementos del menú. */
+            gap: 15px; /* Espacio entre elementos del menú. */
+        }
+
+        /* Estilo de los enlaces de navegación */
+        nav a {
+            text-decoration: none; /* Elimina el subrayado por defecto. */
+            color: white; /* Color del texto blanco. */
+            padding: 8px 16px; /* Espacio interno. */
+            border: 2px solid white; /* Borde blanco visible alrededor del enlace. */
+            border-radius: 4px; /* Bordes redondeados para estética moderna. */
+            transition: background-color 0.3s; /* Transición suave al pasar el cursor. */
+        }
+
+        /* Estilo al pasar el cursor sobre un enlace */
+        nav a:hover {
+            background-color: #c92323; /* Cambia el fondo a gris oscuro al hacer hover. */
+        }
+
+        /* Contenedor para los elementos con íconos (usuario y carrito) */
+        .icon-container {
+            display: flex; /* Flexbox para alinear ícono y texto horizontalmente. */
+            align-items: center; /* Centra verticalmente los íconos. */
+            border: 2px solid white; /* Borde blanco visible. */
+            border-radius: 5px; /* Bordes redondeados. */
+            padding: 5px; /* Espacio interno. */
+        }
+
+        /* Estilo de los íconos (usuario y carrito) */
+        .cart-icon, .user-icon {
+            width: 24px; /* Ancho fijo del ícono. */
+            height: 24px; /* Alto fijo del ícono. */
+            vertical-align: middle; /* Alinea el ícono con el texto. */
+            margin-left: 5px; /* Espacio entre el texto y el ícono. */
+        }
+
+        /* Estilo del contenido principal del cuerpo */
+        .body-content {
+            padding: 20px; /* Espacio alrededor del contenido. */
+            text-align: center; /* Centra horizontalmente el texto. */
+        }
+
+        /* Estilo para imágenes en el contenido principal (no se usa en este código) */
+        .content-image {
+            max-width: 100%; /* Imagen se adapta al ancho del contenedor. */
+            height: auto; /* Mantiene proporciones. */
+        }
+
+    </style>
+</head>
+
+<body> <!-- Cuerpo visible de la página -->
+
+    <!-- Encabezado principal que contiene el logo, buscador y menú -->
+    <header>
+        
+        <!-- Logo de la empresa -->
+        <div class="logo">
+            <img src="https://assets.onecompiler.app/43fqusemf/43fqeghwp/TECHWORLD%20LOGO%20OFICIAL.jpg" 
+                 alt="WorkTech Logo" 
+                 class="worktech-logo" />
+        </div>
+
+        <!-- Barra de búsqueda -->
+        <div class="search-container">
+            <input type="text" placeholder="Buscar aquí..."> <!-- Campo de texto para búsquedas -->
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav>
+            <a href="#">Nosotros</a> <!-- Enlace al apartado 'Nosotros' -->
+
+            <!-- Enlace al inicio de sesión con ícono de usuario -->
+            <div class="icon-container">
+                <a href="#">Login</a>
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/user.png" 
+                     alt="Usuario" 
+                     class="user-icon" />
+            </div>
+
+            <!-- Enlace al carrito de compras con ícono de carrito -->
+            <div class="icon-container">
+                <a href="#">Mi Carro</a>
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/shopping-cart.png" 
+                     alt="Carrito" 
+                     class="cart-icon" />
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de bienvenida -->
+    <div class="body-content">
+        <h1>Bienvenido a WorkTech</h1> <!-- Mensaje central de bienvenida -->
+    </div>
+
+</body>
+</html> <!-- Cierre del documento HTML -->
